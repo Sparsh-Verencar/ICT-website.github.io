@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --card_img_height: 250px;
+    --card_img_width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-size: 64px;
+    background-image: linear-gradient(to left, #0063B2FF, #9CC3D5FF);
+}
+
+.navbar {
+    position: relative;
+    height: 30rem;
+    width: 100vw;
+    background: linear-gradient(to left, darkcyan, darkslategray);
+    text-align: center;
+
+}
+
+
+.bg_img {
+    width: 100vw;
+    height: 30rem;
+    box-shadow: 0 10px 10px black;
+    opacity: 0.2;
+
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content p {
+    text-shadow: 0 10px 10px black;
+}
+
+#title1,#title2 {
+    text-align: center;
+    font-size: 5rem;
+    background-image: linear-gradient(to right, #9CC3D5FF, darkcyan, #0063B2FF);
+    box-shadow: 0 0px 10px black;
+}
+
+hr {
+    box-shadow: 0 0px 10px black;
+}
+
+.pet_cards,.ele_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.cards1,.cards2 {
+    background-color: white;
+    height: 350px;
+    width: 400px;
+
+    text-align: center;
+    justify-items: center;
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    transition: 0.6s;
+    
+}
+
+.cards1:hover,.cards2:hover {
+    height: 400px;
+    width: 420px;
+}
+
+
+.text {
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card_img {
+    height: var(--card_img_height);
+    width: var(--card_img_width);
+}
+
+.gradient {
+    display: grid;
+    background-image: linear-gradient(to bottom, darkslategray 15vh, darkcyan);
+
+}
+
+#logo {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#kiwi {
+    height: 15vh;
+    width: 15vw;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px black;
+}
+
+
+
+.dev-names {
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: left;
+}
+
+.name1,.name2 {
+    display: grid;
+    ;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pro_pic {
+    width: 10vw;
+    height: 20vh;
+    margin-top: 50px;
+    justify-self: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px black;
+}
